@@ -3,7 +3,7 @@ import s from './ThisDay.module.scss'
 import {GlobalSvgSelector} from './../../../../assets/icons/shared/GlobalSvgSelector'
 export default function ThisDay(){
 	return(
-		<header className={s.this_day}>
+		<div className={s.this_day}>
 		<div className={s.top_block}>
 		<div className={s.top_block_wrapper}>
 		<div className={s.this_temp}>20°C</div>
@@ -20,6 +20,6 @@ export default function ThisDay(){
 		</div>
 	
 
-		</header>
+		</div>
 		)
 }
