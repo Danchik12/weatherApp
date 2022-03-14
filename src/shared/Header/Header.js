@@ -2,7 +2,16 @@ import React from 'react'
 import s from './Header.module.scss'
 import Select from 'react-select'
 import {GlobalSvgSelector} from './../../assets/icons/shared/GlobalSvgSelector'
+import {useContext} from 'react'
+import {ThemeContext} from './../../context/ThemeContext'
+
+
 export default function Header (){
+  const theme=useContext(ThemeContext);
+
+
+
+ 
 	 const options = [
     { value: 'city-1', label: 'Минск' },
     { value: 'city-2', label: 'Могилёв' },
@@ -11,8 +20,7 @@ export default function Header (){
   const colourStyles = {
     control: (styles: any) => ({
       ...styles,
-      backgroundColor:
-       0 ? "#4f4f4f":'rgba(71, 147, 255, 0.2)',
+      backgroundColor: theme.theme ==='dark' ? "#4f4f4f":'rgba(71, 147, 255, 0.2)',
       width: '194px',
       height: '37px',
       border: 'none',
@@ -21,9 +29,12 @@ export default function Header (){
     }),
     singleValue: (styles: any) => ({
       ...styles,
-       color:0 ?'#fff' :'#000'
+       color: theme.theme === 'dark' ?'#fff' :'#000'
     }),
   }
+  function changeTheme  () {
+  theme.changeTheme(theme.theme === 'light' ? 'dark' : 'light')
+}
 
 	return (
 <header className={s.header}>
@@ -36,7 +47,7 @@ export default function Header (){
 
 
 <div className={s.wrapper}>
-<div className={s.change_theme}>
+<div className={s.change_theme} onClick={changeTheme}>
 <GlobalSvgSelector id='change-theme' />
 
 </div>
