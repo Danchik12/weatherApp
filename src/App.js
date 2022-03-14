@@ -3,9 +3,11 @@ import {Routes,Route} from 'react-router-dom'
 import Home from './pages/Home/Home'
 import MonthStatic from './pages/MonthStatic/MonthStatic'
 import Header from './shared/Header/Header'
-
+import Popup from './shared/Popup/Popup'
 function App() {
   return (
+    <>
+     <Popup  />
     <div className="container">
     <Header/>
     <Routes>
@@ -15,6 +17,7 @@ function App() {
 
     </Routes>
  </div>
+ </>
   );
 }
 
