@@ -8,6 +8,7 @@
 
 body{
 	position:relative;
+	background:var(#{--body-background-default});
 	font-family: "Montserrat",sans-serif;
 }
 .container{

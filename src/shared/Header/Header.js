@@ -12,7 +12,7 @@ export default function Header (){
     control: (styles: any) => ({
       ...styles,
       backgroundColor:
-       'rgba(71, 147, 255, 0.2)',
+       0 ? "#4f4f4f":'rgba(71, 147, 255, 0.2)',
       width: '194px',
       height: '37px',
       border: 'none',
@@ -21,7 +21,7 @@ export default function Header (){
     }),
     singleValue: (styles: any) => ({
       ...styles,
-       color:'#000'
+       color:0 ?'#fff' :'#000'
     }),
   }
 
