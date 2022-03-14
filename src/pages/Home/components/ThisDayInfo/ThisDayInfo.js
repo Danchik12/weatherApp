@@ -35,7 +35,7 @@ export default function ThisDayInfo(){
 
 		})}
 		</div>
-		<img src={cloud} alt="cloud"/>
+		<img className={s.cloud} src={cloud} alt="cloud"/>
 		
 
 
