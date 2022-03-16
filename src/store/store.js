@@ -1,9 +1,13 @@
-import {configureStore,combineReducers} from '@reduxjs/toolkit'
+import {configureStore} from '@reduxjs/toolkit'
 import WeatherReducer from './slices/WeatherSlice'
-const rootReducer = combineReducers({
-	current_weather:WeatherReducer
-})
 
-export const store = configureStore({reducer:{rootReducer}})
+
+export const store = configureStore({
+	reducer:{current_weather:WeatherReducer},
+	middleware:((getDefault)=>getDefault({
+		serializableCheck:false
+	}))
+
+})
 
 

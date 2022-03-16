@@ -13,9 +13,10 @@ export default function Header (){
 
  
 	 const options = [
-    { value: 'city-1', label: 'Минск' },
+   { value: 'city-1', label: 'Брест' },
+    { value: 'city-3', label: 'Минск' },
     { value: 'city-2', label: 'Могилёв' },
-    { value: 'city-3', label: 'Брест' },
+    
   ];
   const colourStyles = {
     control: (styles: any) => ({

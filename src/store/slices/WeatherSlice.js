@@ -1,7 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  weather:{},
+  weather:{
+    main:{
+      temp:0,
+      pressure:0,
+    }
+  },
   isLoading:false,
   response:{
     status:0,
@@ -18,17 +23,17 @@ export const WeatherSlice = createSlice({
       state.isLoading=true;
     },
     fetchWeatherSuccess:(state,action) =>{
-      state.weather = action.data;
+      state.weather = action.payload.data;
       state.isLoading =false;
       state.response={
-        status:action.status,
-        message:action.statusText}
+        status:action.payload.status,
+        message:action.payload.statusText}
     },
     fetchWeatherError:(state,action) =>{
       state.isLoading =false;
       state.response={
-        status:action.status,
-        message:action.statusText}
+        status:action.payload.status,
+        message:action.payload.statusText}
     }
 
   },

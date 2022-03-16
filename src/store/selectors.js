@@ -1,0 +1,1 @@
+export const selectDate = (state) => state.current_weather

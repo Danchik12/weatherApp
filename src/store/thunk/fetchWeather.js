@@ -9,10 +9,10 @@ if(res.status === 200){
 else{
 	dispatch(WeatherSlice.actions.fetchWeatherError(res));
 }
+}
 catch(e){
 	console.log(e)
 }
 
 }
 
-}
