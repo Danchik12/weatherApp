@@ -2,27 +2,30 @@ import React from 'react'
 import s from './ThisDayInfo.module.scss'
 import cloud from './../../../../assets/images/cloud.png'
 import ThisDayInfoItem from './ThisDayInfoItem'
-export default function ThisDayInfo(){
+export default function ThisDayInfo(weather){
+
+
+  console.log(weather)
 	const items =[
 {
       icon_id: 'temp',
       name: 'Температура',
-      value: '20°С - ощущается как 17°С',
+      value: `${Math.round(weather.weather.temp)} - ощущается как ${Math.round(weather.weather.feels_like)}`,
     },
     {
       icon_id: 'pressure',
       name: 'Давление',
-      value: '765 мм ртутного столба - нормальное',
+      value: `${weather.weather.pressure} Атмосферное давление на уровне моря, гПа`,
     },
     {
       icon_id: 'precipitation',
-      name: 'Осадки',
-      value: 'Без осадков',
+      name: 'Облачность',
+      value: `${weather.weather.clouds}%`,
     },
     {
       icon_id: 'wind',
-      name: 'Ветер',
-      value: '3 м/с юго-запад - легкий ветер',
+      name: 'Скорость ветра',
+      value: `${weather.weather.wind_speed} м/с`,
     },
 
 

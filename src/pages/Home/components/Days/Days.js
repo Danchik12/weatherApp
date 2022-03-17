@@ -4,7 +4,11 @@ import Card from './Card'
 import s from './Days.module.scss'
 
 
-export default function Days(){
+export default function Days(items){
+  var data=items
+
+  
+  console.log(data.items)
 	 const days= [
     {
       day: 'Сегодня',
@@ -62,6 +66,7 @@ export default function Days(){
       temp_night: '+15',
       info: 'Облачно',
     },
+    
   ];
 	return(
 		<>

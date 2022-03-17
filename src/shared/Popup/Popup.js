@@ -2,6 +2,7 @@ import React from 'react'
 import s from './Popup.module.scss'
 import {GlobalSvgSelector} from './../../assets/icons/shared/GlobalSvgSelector'
 import ThisDayInfoItem from './../../pages/Home/components/ThisDayInfo/ThisDayInfoItem'
+import {Timer} from  './../Time/Time'
 export default function Popup(){
 const items =[
 {
@@ -12,12 +13,12 @@ const items =[
     {
       icon_id: 'pressure',
       name: 'Давление',
-      value: '765 мм ртутного столба - нормальное',
+      value: '765 Атмосферное давление на уровне моря, гПа',
     },
     {
       icon_id: 'precipitation',
-      name: 'Осадки',
-      value: 'Без осадков',
+      name: 'Облачность',
+      value: '5%',
     },
     {
       icon_id: 'wind',
@@ -29,14 +30,14 @@ const items =[
 	];
 	return (
 		<>
-		<div className={s.blur}></div>
+		<div className={s.blur} ></div>
 		<div className={s.popup}>
 		<div className={s.day}>
 		<div className={s.day_temp}>12°</div>
 		<div className={s.day_name}>Среда</div>
 		<div className={s.img}><GlobalSvgSelector id='sun' /></div>
-		<div className={s.day_time}>Время: <span>18:30</span></div>
-		<div className={s.day_city}>Город: <span>Минск</span></div>
+		<div className={s.day_time}>Время: <Timer /></div>
+		<div className={s.day_city}>Город: <span>Брест</span></div>
 		</div>
 <div className={s.popup_items}>
 		{items.map((item) => {
