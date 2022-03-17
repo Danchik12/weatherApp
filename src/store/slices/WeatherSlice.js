@@ -11,7 +11,9 @@ const initialState = {
       wind_speed:0,
       clouds:0
     },
-    daily:[]
+    daily:{
+      items:[]
+    }
 
     
     }

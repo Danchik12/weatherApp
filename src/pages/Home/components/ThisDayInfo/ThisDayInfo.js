@@ -5,7 +5,7 @@ import ThisDayInfoItem from './ThisDayInfoItem'
 export default function ThisDayInfo(weather){
 
 
-  console.log(weather)
+  
 	const items =[
 {
       icon_id: 'temp',

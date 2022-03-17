@@ -48,7 +48,7 @@ export default function Days(items){
       icon_id: 'rain',
       temp_day: '+18',
       temp_night: '+15',
-      info: 'Облачно',
+      info: 'Сильный дождь',
     },
     {
       day: 'Сб',
