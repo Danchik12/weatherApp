@@ -8,10 +8,10 @@ import ThisDayInfo from './components/ThisDayInfo/ThisDayInfo'
 import {useDispatch,useSelector} from 'react-redux'
 export default function  Home  (){
 const dispatch = useDispatch()
-const {weather} =useSelector(selectDate)
+const {weather} = useSelector(selectDate)
 useEffect(() =>{
+dispatch(fetchWeather(32,33))
 
-dispatch(fetchWeather('brest'))
 },[])
 
 

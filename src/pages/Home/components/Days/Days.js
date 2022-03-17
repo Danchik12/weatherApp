@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './Card'
-import Tabs from './Tabs'
+
 import s from './Days.module.scss'
 
 
@@ -65,7 +65,7 @@ export default function Days(){
   ];
 	return(
 		<>
-		<Tabs/>
+	
 		<div className={s.days}>
 		
 		{days.map((day)=>{

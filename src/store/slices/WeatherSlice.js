@@ -4,7 +4,7 @@ const initialState = {
   weather:{
     main:{
       temp:0,
-      pressure:0,
+  
     }
   },
   isLoading:false,
