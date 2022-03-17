@@ -2,7 +2,8 @@ import React from 'react'
 import s from './ThisDay.module.scss'
 import {GlobalSvgSelector} from './../../../../assets/icons/shared/GlobalSvgSelector'
 export default function ThisDay(weather){
-	var date =new Date()
+
+	var date = new Date()
 	return(
 		<div className={s.this_day}>
 		<div className={s.top_block}>
