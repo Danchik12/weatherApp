@@ -10,7 +10,7 @@ export default function ThisDayInfo(weather){
 {
       icon_id: 'temp',
       name: 'Температура',
-      value: `${Math.round(weather.weather.temp)} - ощущается как ${Math.round(weather.weather.feels_like)}`,
+      value: `${Math.round(weather.weather.temp)}°C - ощущается как ${Math.round(weather.weather.feels_like)}°C`,
     },
     {
       icon_id: 'pressure',

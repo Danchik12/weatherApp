@@ -10,7 +10,7 @@ export default function ThisDay(weather){
 		<div className={s.top_block}>
 		<div className={s.top_block_wrapper}>
 
-		<div className={s.this_temp}>{Math.round(weather.weather.temp)}</div>
+		<div className={s.this_temp}>{Math.round(weather.weather.temp)}°C</div>
 		<div className={s.this_day_name}>Сегодня</div>
 
 		</div>
