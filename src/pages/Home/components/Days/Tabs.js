@@ -8,7 +8,7 @@ export default function Tabs(){
       value: 'На неделю',
     },
     {
-      value: 'На 10 дней',
+      value: 'На 14 дней',
     },
     {
       value: 'На месяц',
