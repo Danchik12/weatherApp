@@ -21,7 +21,7 @@ export default function Days(items){
     {
       day: 'Завтра',
       day_info: '29 авг',
-      icon_id: 'small_rain_sun',
+      icon_id: 'mainly_cloudy',
       temp_day: '+18',
       temp_night: '+15',
       info: 'небольшой дождь и солнце',
@@ -61,6 +61,14 @@ export default function Days(items){
     {
       day: 'Вс',
       day_info: '3 сен',
+      icon_id: 'sun',
+      temp_day: '+18',
+      temp_night: '+15',
+      info: 'Облачно',
+    },
+    {
+      day: 'Пн',
+      day_info: '4 сен',
       icon_id: 'sun',
       temp_day: '+18',
       temp_night: '+15',

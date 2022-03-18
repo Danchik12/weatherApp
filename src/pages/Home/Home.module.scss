@@ -1,3 +1,5 @@
+@import './../../styles/variables.scss';
+
 .home{
 
 
@@ -5,5 +7,11 @@
 .wrapper{
 	display:flex;
 	justify-content: space-between;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
+}
+
+.title{
+	color:$primary-color;
+	font-size: 36px;
+	margin-bottom: 20px;
 }

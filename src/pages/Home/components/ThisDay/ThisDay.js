@@ -2,10 +2,11 @@ import React from 'react'
 import s from './ThisDay.module.scss'
 import {Timer} from './../../../../shared/Time/Time'
 import {GlobalSvgSelector} from './../../../../assets/icons/shared/GlobalSvgSelector'
-
+import {IdentityId} from './../../../../shared/Identity'
 export default function ThisDay(weather){
 	
-	
+	var id = IdentityId(weather.weather.weather[0].id)
+
 
 	return(
 		<div className={s.this_day}>
@@ -17,7 +18,7 @@ export default function ThisDay(weather){
 
 		</div>
 
-		<GlobalSvgSelector id='sun'/>
+		<GlobalSvgSelector id={id}/>
 		</div>
 
 		<div className={s.bottom_block}>

@@ -19,7 +19,7 @@ useEffect(()=>{
 if(isLoading){
 return <Loader />
 }
-
+	
 	return (
 	
 <div className={s.home}>
@@ -27,6 +27,7 @@ return <Loader />
 <ThisDay weather={weather.current}/>
 <ThisDayInfo weather={weather.current} />
 </div>
+<p  className={s.title}>Погода на неделю</p>
 <Days items={weather.daily}/>
 </div>
 	
