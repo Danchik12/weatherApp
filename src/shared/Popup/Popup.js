@@ -4,6 +4,8 @@ import {GlobalSvgSelector} from './../../assets/icons/shared/GlobalSvgSelector'
 import ThisDayInfoItem from './../../pages/Home/components/ThisDayInfo/ThisDayInfoItem'
 import {Timer} from  './../Time/Time'
 export default function Popup(){
+
+
 const items =[
 {
       icon_id: 'temp',

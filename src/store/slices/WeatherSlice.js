@@ -2,25 +2,8 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
 
-  weather:{
-    current:{
-    weather:{
-      temp:0,
-      feels_like:0,
-      pressure:0,
-      wind_speed:0,
-      clouds:0
-    },
-    daily:{
-      items:[]
-    }
-
-    
-    }
-    
-  
-  },
-  isLoading:false,
+  weather:{},
+  isLoading:true,
   response:{
     status:0,
     message:'',

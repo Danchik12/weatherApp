@@ -2,7 +2,9 @@ import React from 'react'
 import s from './ThisDay.module.scss'
 import {Timer} from './../../../../shared/Time/Time'
 import {GlobalSvgSelector} from './../../../../assets/icons/shared/GlobalSvgSelector'
+
 export default function ThisDay(weather){
+	
 	
 
 	return(
@@ -14,7 +16,8 @@ export default function ThisDay(weather){
 		<div className={s.this_day_name}>Сегодня</div>
 
 		</div>
-		<GlobalSvgSelector id='sun' />
+
+		<GlobalSvgSelector id='sun'/>
 		</div>
 
 		<div className={s.bottom_block}>

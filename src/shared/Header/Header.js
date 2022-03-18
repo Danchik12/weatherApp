@@ -20,7 +20,7 @@ export default function Header (){
 <div className={s.logo}>
 <GlobalSvgSelector id="header-logo"/>
 </div>
-<div className={s.title}>React Weather</div>
+<div className={s.title}>React weather</div>
 </div>
 
 
