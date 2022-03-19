@@ -4,7 +4,7 @@ import cloud from './../../../../assets/images/cloud.png'
 import ThisDayInfoItem from './ThisDayInfoItem'
 export default function ThisDayInfo(weather){
 
-console.log(weather)
+
   
 	const items =[
 {

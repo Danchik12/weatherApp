@@ -14,6 +14,7 @@ const {weather,isLoading} = useSelector((state) => state.current_weather)
 useEffect(()=>{
 
    dispatch(fetchDailyWeather())
+   
  },[]);
 
 if(isLoading){
