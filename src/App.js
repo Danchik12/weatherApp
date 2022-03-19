@@ -13,7 +13,7 @@ function App() {
     <div className="container">
     <Header/>
     <Routes>
-    <Route path='/'  exact element={<Home/>} />
+    <Route path='/weatherApp'  exact element={<Home/>} />
    
 
 
