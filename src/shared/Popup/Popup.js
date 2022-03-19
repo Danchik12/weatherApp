@@ -37,7 +37,7 @@ const items =[
     {
       icon_id: 'wind',
       name: 'Ветер',
-      value: `${popup.day.wind_speed} м/с юго-запад - легкий ветер`,
+      value: `${popup.day.wind_speed} м/с `,
     },
 
 
