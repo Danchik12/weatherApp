@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{useEffect,useState} from 'react'
 import s from './Home.module.scss'
 import Loader from './../../shared/Loader/Loader'
 import {fetchDailyWeather} from './../../store/thunk/fetchWeather'
@@ -8,14 +8,17 @@ import ThisDayInfo from './components/ThisDayInfo/ThisDayInfo'
 import {useDispatch,useSelector} from 'react-redux'
 export default function  Home  (){
 const dispatch = useDispatch()
-
+const [value,setValue]=useState(true)
+setInterval(()=>{
+	setValue(value == true ? false : true)
+},180000)
 const {weather,isLoading} = useSelector((state) => state.current_weather)
 
 useEffect(()=>{
 
    dispatch(fetchDailyWeather())
    
- },[]);
+ },[value]);
 
 if(isLoading){
 return <Loader />
