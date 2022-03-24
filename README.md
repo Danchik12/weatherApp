@@ -6,7 +6,7 @@ This application shows the current weather in the city of Brest.
 API used [openWeatherApi](https://openweathermap.org/api).
 
 Weather updated every 30 minutes
-
+[You can watch live here](https://danchik12.github.io/weatherApp/)
 
 ## Available Scripts
 
