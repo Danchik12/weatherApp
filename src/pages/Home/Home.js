@@ -11,7 +11,7 @@ const dispatch = useDispatch()
 const [value,setValue]=useState(true)
 setInterval(()=>{
 	setValue(value == true ? false : true)
-},180000)
+},360000)
 const {weather,isLoading} = useSelector((state) => state.current_weather)
 
 useEffect(()=>{
